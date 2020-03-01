@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run --prefix ./client build",
-    "dev": "npm run --prefix ./client dev",
-    "start": "npm run --prefix ./client start"
+    "dev": "concurrently \"npm run --prefix ./server/ dev\" \"npm run --prefix ./client/ start\"",
+    "start": "concurrently \"npm run --prefix ./server/ start\" \"npm run --prefix ./client/ start\""
   },
   "repository": {
     "type": "git",
