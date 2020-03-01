@@ -1,7 +1,7 @@
 {
   "name": "apollo-next-graphql-setup",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a next-apollo-graphql setup to start develop your web site. This setup uses server side rendering.",
   "main": "index.js",
   "scripts": {
     "postinstall": "cd ./client && npm install && cd ../server && npm install && cd ..",
@@ -13,8 +13,16 @@
     "type": "git",
     "url": "git+https://github.com/sergeyyarkov/next-apollo-graphql-setup.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "nextjs",
+    "nodejs",
+    "apollo",
+    "graphql",
+    "apollo-client",
+    "express"
+  ],
+  "author": "Sergey Yarkov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sergeyyarkov/next-apollo-graphql-setup/issues"
