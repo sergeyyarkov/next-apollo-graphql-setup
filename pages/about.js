@@ -1,13 +1,13 @@
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/SEO/SEO'
 
-const Index = () => (
+const About = () => (
   <>
-    <SEO pageTitle='Index page' />
+    <SEO pageTitle='About page' />
     <Layout>
-      <h1>Index page</h1>
+      <h1>About page</h1>
     </Layout>
   </>
 )
 
-export default Index
+export default About
