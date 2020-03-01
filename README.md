@@ -1,4 +1,4 @@
-### This is a next-apollo-graphql setup to develop your web site. This setup uses server side rendering.
+### This is a next-apollo-graphql setup to start develop your web site. This setup uses server side rendering.
 
 
 ## 🚀 Getting Started
@@ -26,6 +26,8 @@ You can easily use `Query` component to send queries to the GraphQL server. Just
 
 Use the `withApollo` HOC to wrap your pages.
 ```jsx
+
+// ./frontend/pages/articles.js
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/SEO/SEO'
 import Query from '../components/Query/query'
