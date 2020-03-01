@@ -1,30 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+### This is a next-apollo-graphql setup to develop your web site. This setup uses server side rendering.
 
-## Getting Started
 
-First, run the development server:
+## 🚀 Getting Started
+
+To start the development server, you need to run the following commands below. 
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
+```
+Open http://localhost:3000 with your browser to see the result.
+
+Our application runs on port `3000`, and GraphQL server also runs on port `3005`.
+
+## ⚡ Using Query
+
+You can easily use `Query` component to send queries to the GraphQL server. Just pass your query to the `Query` component.
+```jsx
+<Query query={ARTICLES_QUERY}>
+    {({ data: { articles } }) => {
+        return <Articles articles={articles} />;
+    }}
+</Query>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Use the `withApollo` HOC to wrap your pages.
+```jsx
+import Layout from '../components/Layout/Layout'
+import SEO from '../components/SEO/SEO'
+import Query from '../components/Query/query'
+import ARTICLES_QUERY from '../apollo/queries/articles/articles';
+import { withApollo } from '../lib/apollo';
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Learn More
+const Articles = () => {
+    return (
+        <>
+            <SEO pageTitle='Articles page' />
+            <Layout>
+                <h1>Articles page</h1>
+                <div>
+                    <Query query={ARTICLES_QUERY}>
+                        {({ data: { articles } }) => {
+                            return articles.map(art => {
+                                return (
+                                    <div key={art.id}>
+                                        <p>
+                                            title: {art.title} <br />
+                                            id: {art.id}
+                                        </p>
+                                    </div>
+                                )
+                            })
+                        }}
+                    </Query>
+                </div>
+            </Layout>
+        </>  
+    )
+  
+}
 
-To learn more about Next.js, take a look at the following resources:
+export default withApollo(Articles)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on ZEIT Now
 
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
