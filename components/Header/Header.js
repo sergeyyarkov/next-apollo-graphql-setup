@@ -14,6 +14,11 @@ const Header = () => (
                     <a>About</a>
                 </Link>
             </li>
+            <li>
+                <Link href='/articles'>
+                    <a>Articles</a>
+                </Link>
+            </li>
         </ul>
     </header>
 )
