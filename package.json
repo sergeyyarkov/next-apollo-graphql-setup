@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run --prefix ./client dev"
+    "build": "npm run --prefix ./client build",
+    "dev": "npm run --prefix ./client dev",
+    "start": "npm run --prefix ./client start"
   },
   "repository": {
     "type": "git",
