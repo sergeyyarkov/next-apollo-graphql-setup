@@ -6,7 +6,7 @@
 To start the development server, you need to run the following commands below. 
 
 ```bash
-npm postinstall
+npm install
 npm run dev
 ```
 Open http://localhost:3000 with your browser to see the result.
