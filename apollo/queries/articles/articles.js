@@ -7,6 +7,6 @@ const ARTICLES_QUERY = gql`
             title
         }
     }
-`;
+`
 
 export default ARTICLES_QUERY

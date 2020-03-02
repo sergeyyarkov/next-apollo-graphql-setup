@@ -5,13 +5,13 @@ import Head from 'next/head'
 */
 
 const SEO = props => {
-    const { pageTitle } = props
+  const { pageTitle } = props
 
-    return (
-        <Head>
-            <title>{pageTitle}</title>
-        </Head>
-    )
+  return (
+    <Head>
+      <title>{pageTitle}</title>
+    </Head>
+  )
 }
 
 export default SEO
