@@ -1,31 +1,25 @@
 {
   "name": "apollo-next-graphql-setup",
-  "version": "1.0.0",
-  "description": "This is a next-apollo-graphql setup to start develop your web site. This setup uses server side rendering.",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "postinstall": "cd ./client && npm install && cd ../server && npm install && cd ..",
-    "build": "npm run --prefix ./client build",
-    "dev": "concurrently \"npm run --prefix ./server/ dev\" \"npm run --prefix ./client/ dev\"",
-    "start": "concurrently \"npm run --prefix ./server/ start\" \"npm run --prefix ./client/ start\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sergeyyarkov/next-apollo-graphql-setup.git"
-  },
-  "keywords": [
-    "react",
-    "nextjs",
-    "nodejs",
-    "apollo",
-    "graphql",
-    "apollo-client",
-    "express"
-  ],
-  "author": "Sergey Yarkov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sergeyyarkov/next-apollo-graphql-setup/issues"
-  },
-  "homepage": "https://github.com/sergeyyarkov/next-apollo-graphql-setup#readme"
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "@apollo/react-ssr": "^3.1.3",
+    "@zeit/next-sass": "^1.0.1",
+    "apollo-boost": "^0.4.7",
+    "apollo-server-micro": "^2.10.1",
+    "graphql-tag": "^2.10.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "9.2.2",
+    "next-with-apollo": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
+  }
 }

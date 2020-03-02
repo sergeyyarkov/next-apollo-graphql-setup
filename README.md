@@ -11,7 +11,7 @@ npm run dev
 ```
 Open http://localhost:3000 with your browser to see the result.
 
-Our application runs on port `3000`, and GraphQL server also runs on port `3005`.
+Our application runs on port `3000`, and GraphQL server also runs on `localhost:3000/api/graphql`.
 
 ## ⚡ Using Query
 
