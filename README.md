@@ -63,7 +63,7 @@ const Articles = () => {
   
 }
 
-export default withApollo(Articles)
+export default withData(Articles)
 
 ```
 
