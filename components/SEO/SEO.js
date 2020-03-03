@@ -10,6 +10,10 @@ const SEO = props => {
   return (
     <Head>
       <title>{pageTitle}</title>
+      <meta
+      name="description"
+      content="-"
+    />
     </Head>
   )
 }

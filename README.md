@@ -24,7 +24,7 @@ You can easily use `Query` component to send queries to the GraphQL server. Just
 </Query>
 ```
 
-Use the `withApollo` HOC to wrap your pages.
+Use the `withData` HOC to wrap your pages.
 ```jsx
 
 // ./frontend/pages/articles.js
@@ -32,7 +32,7 @@ import Layout from '../components/Layout/Layout'
 import SEO from '../components/SEO/SEO'
 import Query from '../components/Query/query'
 import ARTICLES_QUERY from '../apollo/queries/articles/articles';
-import { withApollo } from '../lib/apollo';
+import withData from '../lib/apollo';
 
 
 const Articles = () => {
