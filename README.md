@@ -66,7 +66,8 @@ const Articles = () => {
 export default withData(Articles)
 
 ```
-
+## License:
+[MIT](https://github.com/sergeyyarkov/next-apollo-graphql-setup/blob/master/LICENSE)
 
 
 
