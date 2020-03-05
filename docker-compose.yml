@@ -5,4 +5,10 @@ services:
         restart: always
         build: .
         ports: 
-            - '3000:3000'
+            - '3000:80'
+    webserver:
+        container_name: webserver
+        restart: unless-stopped
+        build: nginx
+        ports: 
+            - '80:80'      

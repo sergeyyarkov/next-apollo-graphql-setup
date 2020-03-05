@@ -11,6 +11,6 @@ module.exports = withSass({
     return config
   },
   env: {
-    GRAPHQL_API_URI: 'http://localhost:3000/api/graphql'
+    GRAPHQL_API_URI: 'http://localhost/api/graphql'
   }
 })
