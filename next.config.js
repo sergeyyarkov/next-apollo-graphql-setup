@@ -9,5 +9,8 @@ module.exports = withSass({
     config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}))
 
     return config
+  },
+  env: {
+    GRAPHQL_API_URI: 'http://localhost:3000/api/graphql'
   }
 })
