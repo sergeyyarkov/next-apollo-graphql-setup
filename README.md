@@ -5,6 +5,7 @@
 
 To start the development server, you need to run the following commands below. 
 
+### Using Node
 ```bash
 npm install
 npm run dev
@@ -12,6 +13,12 @@ npm run dev
 Open http://localhost:3000 with your browser to see the result.
 
 Our application runs on port `3000`, and GraphQL server also runs on `localhost:3000/api/graphql`.
+
+### Using Nginx
+```bash
+docker-compose build && docker-compose up
+```
+Our application runs on port `80`, and GraphQL server also runs on `localhost:80/api/graphql`.
 
 ## ⚡ Using Query
 
