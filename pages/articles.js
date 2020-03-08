@@ -2,7 +2,7 @@ import Layout from '../components/Layout/Layout'
 import SEO from '../components/SEO/SEO'
 import Query from '../components/Query/query'
 import ARTICLES_QUERY from '../apollo/queries/articles/articles'
-import withData from '../lib/apollo'
+import { withApollo } from '../lib/apollo'
 
 const Articles = () => {
   return (
@@ -31,4 +31,4 @@ const Articles = () => {
   )
 }
 
-export default withData(Articles)
+export default withApollo(Articles)

@@ -1,9 +1,7 @@
-const { ApolloServer, gql } = require('apollo-server-micro')
-const { typeDefs } = require('../../graphql/typeDefs')
-const { resolvers } = require('../../graphql/resolvers')
+import { ApolloServer } from 'apollo-server-micro'
+import { schema } from '../../graphql'
 
-const apolloServer = new ApolloServer({ typeDefs, resolvers })
-const handler = apolloServer.createHandler({ path: '/api/graphql' })
+const apolloServer = new ApolloServer({ schema })
 
 export const config = { api: { bodyParser: false } }
-export default handler
+export default apolloServer.createHandler({ path: '/api/graphql' })
