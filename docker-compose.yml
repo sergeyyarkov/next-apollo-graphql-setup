@@ -10,5 +10,5 @@ services:
         container_name: webserver
         restart: unless-stopped
         build: nginx
-        ports: 
-            - '80:80'   
+        ports:   
+            - '80:80'

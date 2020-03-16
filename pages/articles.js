@@ -31,4 +31,8 @@ const Articles = () => {
   )
 }
 
+<<<<<<< HEAD
 export default withApollo(Articles)
+=======
+export default withApollo({ ssr: true })(Articles)
+>>>>>>> d845bf167260c295393e750017fc4e327e987967
