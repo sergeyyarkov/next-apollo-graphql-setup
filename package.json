@@ -14,8 +14,10 @@
     "apollo-boost": "^0.4.7",
     "apollo-link-schema": "^1.2.4",
     "apollo-server-micro": "^2.10.1",
+    "graphql-import": "^1.0.0-beta.2",
     "graphql-tag": "^2.10.3",
     "graphql-tools": "^4.0.7",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "9.2.2",
     "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
@@ -32,5 +34,5 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-standard": "^4.0.1"
-  }
+  } 
 }

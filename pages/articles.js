@@ -31,4 +31,4 @@ const Articles = () => {
   )
 }
 
-export default withApollo(Articles)
+export default withApollo({ ssr: true })(Articles)
